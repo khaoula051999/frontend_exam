@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+  
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js">
+    <title>Document</title>
+</head>
+<body>
+<h1>Ajout Machine</h1>
+<div class="container">
+    <form action="search-form" #form ="ngForm" (ngSubmit)="OnSubmit()" >
+       
+
+        <input type="text" class="search-input" name="nom" ngModel [(ngModel)]="nom" placeholder="nom" >
+   
+
+        <input type="text" class="search-input" name="ip" ngModel [(ngModel)]="ip" placeholder="ip" >
+     
+        <input type="text" class="search-input" name="sysexploitation" ngModel [(ngModel)]="sysexploitation" placeholder="sysexploitation" >
+        <input type="text" class="search-input" name="etat" ngModel [(ngModel)]="etat" placeholder="etat" >
+        <button class="search-button btn-primary" >Send</button>
+
+    </form>
+
+ 
+</div>
+
+<h1>Supression Machine</h1>
+
+<div class="container">
+    <form action="search-form" #form ="ngForm" (ngSubmit)="Supprimer()" >
+        <input type="text" class="search-input" name="ip" ngModel [(ngModel)]="ips" placeholder="ip" >
+
+        <button class="search-button btn-primary" >Send</button>
+    </form>
+
+ 
+</div>
+</body>
